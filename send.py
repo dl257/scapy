@@ -9,7 +9,7 @@ server = '10.230.228.146'
 server2 = '10.230.228.147'
 port = 8000
 
-eth_pkt = Ether() / IP(dst=server) / TCP(dport=port)
+eth_pkt = Ether() / IP(dst=server2) / TCP(dport=port)
 print('ETH_PKT\n-------')
 print(eth_pkt.summary())
 sendp(eth_pkt)
